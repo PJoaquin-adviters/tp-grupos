@@ -27,6 +27,7 @@ form.addEventListener('submit', function (event) {
         .then(data => {
             let token = data.accessToken.stsTokenManager.accessToken;
             localStorage.setItem('localToken', token);
+            localStorage.setItem('data', JSON.stringify(data))
             getGrupo(token)
 
         }
