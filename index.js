@@ -52,7 +52,9 @@ function getGrupo(token) {
         .then(response => response.json())
         .then(data => {
             console.log(data);
-            localStorage.setItem('grupos', data);
+            localStorage.setItem('grupos', JSON.stringify(data));
+            window.open(
+                "views/grupos.html", "_blank");
         })
         .catch(err => console.error(err));
 
