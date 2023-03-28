@@ -1,0 +1,127 @@
+body {
+    background-color: #F8F8F8;
+    font-family: Arial, sans-serif;
+    margin: 0;
+	padding: 0;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+h1 {
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+
+form {
+    background-color: #FFFFFF;
+    border-radius: 5px;
+    padding: 20px;
+    box-shadow: 0px 0px 5px #BFBFBF;
+    width: 400px;
+    margin: 0 auto;
+}
+
+label {
+    display: block;
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    box-sizing: border-box;
+}
+
+button[type="submit"] {
+    background-color: #336699;
+    color: #FFFFFF;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button[type="submit"]:hover {
+    background-color: #003366;
+}
+
+main {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	padding: 20px;
+}
+
+.card {
+	background-color: #FFFFFF;
+	box-shadow: 30px 20px 100px 30px rgba(5, 39, 133, 0.2);
+	border-radius: 5px;
+	margin: 20px;
+	width: 300px;
+	padding: 20px;
+	text-align: center;
+	transition: transform 0.3s ease-in-out;
+}
+
+.card:hover {
+	transform: translateY(-10px);
+}
+
+.card h2 {
+	font-size: 24px;
+	margin-bottom: 10px;
+	margin-top: 10px;
+    border-top: 2px solid black;
+	border-bottom: 2px solid black;
+}
+
+/* Estilos para pantallas grandes */
+@media screen and (min-width: 768px) {
+    header {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      margin-bottom: 2rem;
+    }
+  
+    h1 {
+      font-size: 3rem;
+    }
+  
+    form {
+      width: 50%;
+      margin: 0 auto;
+    }
+  }
+  
+  /* Estilos para pantallas pequeñas */
+  @media screen and (max-width: 767px) {
+    header {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      margin-bottom: 2rem;
+    }
+  
+    h1 {
+      font-size: 2rem;
+    }
+  
+    form {
+      width: 80%;
+      margin: 0 auto;
+    }
+  }
